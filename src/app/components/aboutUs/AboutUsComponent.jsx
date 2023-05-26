@@ -7,11 +7,16 @@ import biking from "./img/biking.png"
 
 export default function AboutUsComponent() {
   return <div className="about-us">
-    <img className="about-us-banner-img" src={barbell}></img>
-    <div className="about-us-title"><h2>ABOUT US</h2> <p>Redback Operations aims to harness the power of IoT, AI and 3D game worlds to push your exercise routine into the future.</p></div>
+    <div className="about-us-header">
+      <img className="about-us-banner-img" src={barbell} alt=""></img>
+      <div className="about-us-title">
+        <h2>ABOUT US</h2> 
+        <p>Redback Operations aims to harness the power of IoT, AI and 3D game worlds to push your exercise routine into the future.</p>
+      </div>
+    </div>
     <div className="about-us-container">
       
-      <img src={deadlift} className="about-us-img"></img>
+      <img src={deadlift} className="about-us-img" alt=""></img>
       <p>
         Redback Operations builds cutting-edge technologies for connected health, fitness and sport to enable safe smart exercise. 
         It is focused on providing a community-driven exercise and well-being gaming experience with competitive elements. 
@@ -21,8 +26,8 @@ export default function AboutUsComponent() {
       provide users with a fully immersive experience where they can engage with other users both casually and competitively or enjoy individual exercise 
       routines all the while receiving real-time feedback and tips on how to improve their performance and be the best person that they can be.
       </p>
-      <img src={gym} className="about-us-img"></img>
-      <img src={biking} className="about-us-img"></img>
+      <img src={gym} className="about-us-img" alt=""></img>
+      <img src={biking} className="about-us-img" alt=""></img>
       <p>
       We believe in enabling safe smart exercise through connecting health, fitness and sport. To achieve this goal, Redback operations work to: <br></br>
       • Develop an engaged and self-sustaining online community <br></br>

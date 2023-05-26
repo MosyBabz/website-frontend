@@ -11,7 +11,11 @@
     grid-template-rows: repeat(3, auto);
     background-color: #e87461;
 }
-
+.about-us-header
+{
+    width: 100%;
+    height: auto;
+}
 
 .about-us-banner-img {
     position: relative;
@@ -58,4 +62,69 @@
     margin: auto;
     text-align: center;
     color: white;
+}
+/*media responsive design*/
+@media all and (max-width:990px)
+{
+    .about-us-title
+    {
+        position:absolute;
+        text-align: center;
+    }
+    .about-us-title h2
+    {
+        font-size: 30px;
+    }
+    .about-us-title p
+    {
+        font-size: 14px;
+        width: fit-content;
+    }
+    .about-us-container img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .about-us-container p
+    {
+        font-size: 18px;
+        width: fit-content;
+        font-size: medium;
+        margin: auto;
+        text-align: center;
+    }
+}
+/*--mobile devices-*/
+@media all and (max-width:700px)
+{
+    .about-us-container
+    {
+        width:100%;
+        margin:auto;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(6,auto);
+        background-color: #e87461;
+    }
+    .about-us-container p
+    {
+        padding: 20px;
+        width: fit-content;
+        font-size: medium;
+        margin: auto;
+        text-align: center;
+    }
+    .about-us-footer
+    {
+        padding: 20px;
+        width: fit-content;
+        font-size: small;
+        margin: auto;
+        color:white;
+        text-align: center;
+    }
+    .about-us-container img
+    {
+        width: 100%;
+        height: auto;
+    }
 }

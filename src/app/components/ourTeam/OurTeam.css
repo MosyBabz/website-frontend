@@ -8,13 +8,16 @@
 }
 
 .our-team-heading,.our-students-heading {
-    width: 1300px;
+    /*Remove width*/
+    /*width: 1300px;*/
     font-family: 'Bodoni Moda', serif;
     font-size: 36px;
     color: white;
     margin:auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    /*Align heading to the center*/
+    text-align: center;
 }
 
 .our-team-heading {
@@ -36,7 +39,8 @@
 
 .directors {
     margin: auto;
-    width: 1300px;
+    /*Optimise width*/
+    width: 100%;
 }
 
 .our-directors-heading {
@@ -86,4 +90,40 @@
     color: #62656A;
     width: 300px;
     font-size: 18px;
+}
+/*--responsive web design--*/
+@media all and (max-width:990px)
+{
+    .our-directors-heading,.our-students-heading
+    {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .directors-background
+    {
+        height: auto;
+        width: 100%;
+        background-color: #5A226D;
+    }
+    .our-board-directors-members
+    {
+        display: grid;
+        justify-content: center;
+        /*display one column*/
+        grid-template-columns: repeat(1,300px);
+        grid-template-rows: auto;
+        gap: 40px;
+    }
+    .our-student-directors-members
+    {
+        display: grid;
+        /*display one column of members*/
+        grid-template-columns: repeat(1, 500px);
+        /*display six rows of members*/
+        grid-template-rows: repeat(6, 200px);
+        column-gap: 120px;
+        justify-content: center;
+    }
+
 }
